@@ -1,0 +1,62 @@
+name: 🐞 Bug Report
+description: Report incorrect point calculation or technical issue
+title: "[BUG] "
+labels: [bug, pending]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the form below as accurately as possible.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐞 Bug Description
+      description: Clearly describe what the bug is.
+      placeholder: e.g. Points are not calculated correctly after completing a quest.
+    validations:
+      required: true
+
+  - type: input
+    id: profile-url
+    attributes:
+      label: 📎 Profile URL
+      description: Paste your Cloud Skills Boost public profile URL.
+      placeholder: https://www.cloudskillsboost.google/public_profiles/your-user-id
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: 🧮 What was expected?
+      description: What did you expect to see?
+      placeholder: e.g. I expected to see 100 points after completing 5 quests.
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: 🧾 What did you see instead?
+      description: Describe what was shown incorrectly.
+      placeholder: e.g. Only 60 points are displayed.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots (Optional)
+      description: Add screenshots to help explain the problem.
+      placeholder: You can drag and drop image files here.
+
+  - type: input
+    id: device-info
+    attributes:
+      label: 💻 Device & Browser Info (Optional)
+      description: List the device, OS, and browser you're using.
+      placeholder: e.g. Windows 11, Chrome 124
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 🔁 Additional Context
+      description: Add any other context or links related to the issue.
